@@ -15,7 +15,7 @@ stage('Build-and-tag')
     app = docker.build('zimmate2/car_web_new')
 }
 
-stage('Push-to-docker')
+stage('Push-to-dockerhub')
 {
     /* this code pushes the changes to docker hub*/
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_credentials')
