@@ -22,13 +22,7 @@ stage('Push-to-dockerhub')
     {
         app.push('latest')
     }
-}
 
-stage('Push-to-docker')
-{
-    /* this code pushes the changes to docker hub*/
-    docker.withRegistry('https://registry.hub.docker.com', 'zimmate')
-}
 
 stage('Deploy')
 {
