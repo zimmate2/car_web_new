@@ -22,7 +22,7 @@ stage('Push-to-dockerhub')
     {
         app.push('latest')
     }
-
+}
 
 stage('Deploy')
 {
