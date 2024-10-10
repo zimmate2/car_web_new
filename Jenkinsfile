@@ -18,7 +18,7 @@ stage('Build-and-tag')
 stage('Push-to-dockerhub')
 {
     /* this code pushes the changes to docker hub*/
-    docker.withRegistry('https://registry.hub.docker.com', 'zimmate')
+    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_credentials')
     {
         app.push('latest')
     }
