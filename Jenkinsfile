@@ -12,7 +12,7 @@ stage('Build-and-tag')
 {
     /*this builds the image
         this is synonymous to docker build on the CLI */
-    app = docker.build('zimmate2/car_web_new')
+    app = docker.build('zimmate222/car_web_new')
 }
 
 stage('Push-to-dockerhub')
